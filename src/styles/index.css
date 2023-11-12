@@ -1,3 +1,10 @@
+.stem {
+    background-color: black;
+    text-align: center;
+    width: 20px;
+    height: 90px;
+}
+
 .App {
     text-align: center;
     width: 250px;
@@ -6,12 +13,35 @@
     border-radius: 5%;
     margin: auto;
     margin-top: 200px;
+    background-color: black;
 }
-.light {
+.red {
+    background-color: red;
     width: 150px;
     height: 150px;
     border: 2px solid black;
     border-radius: 50%;
     margin: auto;
     margin-top: 7px;
+}
+.yellow {
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 7px;
+}
+.green {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 7px;
+}
+.glow {
+    box-shadow: ;
 }
