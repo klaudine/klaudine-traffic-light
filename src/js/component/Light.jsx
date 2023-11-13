@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 
  let Light = () => {
     const [ color, setColor ] = useState(false)
-
-    const handleClick= () => {
-        setColor();
-    }
-
+  
 
     return (
+        
         <div>
-            <div className={"light red"} onClick={handleClick}> </div>
-
-            <div className={"light yellow"} onClick={handleClick}></div>
             
-            <div className={"light green"} onClick={handleClick}></div>
+           
+            <div onClick={() => setColor("red")} className={`light red ${color === "red" ? "glow": ""}`} ></div>
+
+            <div onClick={() => setColor("yellow")} className={`light yellow ${color === "yellow" ? "glow": ""}`} ></div>
+
+            <div onClick={() => setColor("green")} className={`light green ${color === "green" ? "glow": ""}`} ></div>
+            
         </div>
     );
 }
